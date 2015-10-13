@@ -1,0 +1,7 @@
+Django==1.8.5
+ipdb==0.8.1
+ipython==4.0.0
+ipython-genutils==0.1.0
+matplotlib==1.4.3
+mpld3==0.2
+pandas==0.17.0
