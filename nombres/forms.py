@@ -9,6 +9,7 @@ CHOICES = [('apellido', 'Apellidos'),
 class SearchForm(forms.Form):
     options = forms.ChoiceField(choices=CHOICES)
     terms = forms.CharField()
+    tipo = forms.ChoiceField(choices=[('count', 'Votantes/por clase'), ('cumsum', 'Acumulado')], initial='count')
 
     def clean_terminos(self):
         terms = self.cleaned_data['terminos']
